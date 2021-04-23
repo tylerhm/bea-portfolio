@@ -25,7 +25,7 @@ const Navigation = () => {
   }
 
   return (
-    <Navbar className='py-4' fixed='top' expand='md'>
+    <Navbar className='py-3' fixed='top' expand='md'>
       <div className='social-group'>
         <Nav.Link href='https://www.facebook.com/profile.php?id=100016575947941' target='_blank'>
           <FaFacebookF />
