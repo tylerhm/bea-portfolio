@@ -1,0 +1,48 @@
+:root {
+  --link-highlight: #ff99cc;
+}
+
+@font-face {
+  font-family: 'Avenir Light';
+  src: local('Avenir Light'), url('../fonts/AvenirLight/AvenirLight.ttf') format('truetype');
+}
+
+.navbar {
+  font-family: 'Avenir Light';
+}
+
+.navbar, .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding-left: 2em;
+    padding-right: 2em
+  }
+}
+
+.social-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  color:black !important
+}
+
+.nav-link:hover, .active {
+  color: var(--link-highlight) !important
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
