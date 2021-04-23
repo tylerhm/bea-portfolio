@@ -1,0 +1,53 @@
+.navbar {
+  font-family: 'Metropolis';
+  font-weight: 300;
+  background-color: white;
+
+  .navbar, .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav {
+    align-self: center;
+  }
+
+  
+  @media (min-width: 768px) {
+    .navbar-collapse {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-item {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .nav-item {
+      padding-top: 1em;
+    }
+  }
+  
+  .social-group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+  }
+  
+  a {
+    color:black !important;
+    transition: all 0.1s;
+  }
+  a:hover, .active {
+    color: var(--accent) !important;
+    text-decoration: none !important;
+  }
+  
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}

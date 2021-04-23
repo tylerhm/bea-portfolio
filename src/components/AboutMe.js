@@ -1,5 +1,5 @@
 import aboutMe from '../images/about-me.webp'
-import './AboutMe.css'
+import './AboutMe.scss'
 
 const AboutMe = () => {
   return (

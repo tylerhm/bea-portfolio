@@ -1,0 +1,44 @@
+.marbled {
+  background: url('../images/marble.webp') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: black;
+
+  min-height: 700px;
+  height: auto;
+  
+  .column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header {
+    color: black;
+    font-size: 3em;
+  }
+  
+  .boxed {
+    padding: 20px 100px;
+    text-align: center;
+  
+    border: black;
+    border-width: 10px;
+    border-style: solid;
+  
+    margin-bottom: 75px;
+  }
+}

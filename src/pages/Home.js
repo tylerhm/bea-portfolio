@@ -1,30 +1,16 @@
 import Navigation from '../components/Navigation'
-import {
-  Parallax,
-  Background
-} from 'react-parallax'
-import background from '../images/background.webp'
+import ParallaxBanner from '../components/ParallaxBanner'
 import AboutMe from '../components/AboutMe'
-import './Home.css'
+import ContactMe from '../components/ContactMe'
+import './Home.scss'
 
 const Home = () => {
   return (
     <div>
       <Navigation />
-      <Parallax strength={800}> 
-        <Background>
-          <img className='bg' src={background} alt='Headshot Parallax' />
-        </Background>
-        <div className='banner spaced'>
-          <p className='header push-down'>BIANCA</p>
-          <p className='header'>RIVERA-IRIONS</p>
-          <p className='header sub'>Actor & Model</p>
-        </div>
-      </Parallax>
+      <ParallaxBanner />
       <AboutMe />
-      <div className='contact-me'>
-
-      </div>
+      <ContactMe />
     </div>
   )
 }

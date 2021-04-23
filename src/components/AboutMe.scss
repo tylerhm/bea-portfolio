@@ -1,0 +1,35 @@
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: #c6c4c7;
+  min-height: 700px;
+  height: auto;
+
+  * {
+    padding: 25px;
+  }
+  
+  .flex-vertical {
+    height: 550px;
+  }
+  
+  .content {
+    font-family: 'Metropolis';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 2em;
+  
+    max-width: 350px;
+  }
+  
+  .header {
+    color: black;
+    font-size: 3em;
+  }
+}
+

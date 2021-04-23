@@ -9,7 +9,7 @@ import {
   FaInstagram
 } from 'react-icons/fa'
 import PagesIndex from '../pages/PagesIndex'
-import './Navigation.css'
+import './Navigation.scss'
 
 const Navigation = () => {
 
@@ -27,10 +27,10 @@ const Navigation = () => {
   return (
     <Navbar className='py-3' fixed='top' expand='md'>
       <div className='social-group'>
-        <Nav.Link href='https://www.facebook.com/profile.php?id=100016575947941' target='_blank'>
+        <Nav.Link href='https://www.facebook.com/profile.php?id=100016575947941' target='_blank' rel='noreferrer'>
           <FaFacebookF />
         </Nav.Link>
-        <Nav.Link href='https://www.instagram.com/beariverairions' target='_blank'>
+        <Nav.Link href='https://www.instagram.com/beariverairions' target='_blank' rel='noreferrer'>
           <FaInstagram />
         </Nav.Link>
       </div>
