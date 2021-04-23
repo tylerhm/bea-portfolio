@@ -6,6 +6,10 @@
   height: 1200px;
 }
 
+.bg {
+  width: 100vw;
+}
+
 .header {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;

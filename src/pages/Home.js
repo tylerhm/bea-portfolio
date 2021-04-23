@@ -12,7 +12,7 @@ const Home = () => {
     <Navigation />
     <Parallax strength={800}> 
       <Background>
-        <img src={background} alt='Headshot Parallax' />
+        <img className='bg' src={background} alt='Headshot Parallax' />
       </Background>
       <div className='banner'>
         <p className='header push-down'>BIANCA</p>
