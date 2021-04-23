@@ -20,7 +20,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .nav-item {
     padding-left: 3em;
     padding-right: 3em;
@@ -36,15 +35,15 @@
 .social-group {
   display: flex;
   flex-direction: row;
-  margin-right: auto;
+  margin-left: 15%;
 }
 
 a {
-  color:black !important
+  color:black !important;
+  transition: all 0.1s;
 }
-
 a:hover, .active {
-  color: var(--link-highlight) !important;
+  color: var(--accent) !important;
   text-decoration: none !important;
 }
 

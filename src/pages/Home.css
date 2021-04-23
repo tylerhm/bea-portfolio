@@ -3,11 +3,15 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
   height: 1200px;
 }
 
 .bg {
-  width: 100vw;
+  width: auto;
+  min-width: 100vw;
+  min-height: fit-content;
 }
 
 .header {
@@ -17,7 +21,6 @@
 
   color: white;
   font-size: 4em;
-  letter-spacing: 0.1em;
   margin-top: -30px;
 }
 
@@ -31,6 +34,78 @@
   margin-top: -20px;
 }
 
+.spaced {
+  letter-spacing: 0.1em;
+}
+
 .push-down {
   margin-top: 200px;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: #c6c4c7;
+  min-height: 700px;
+  height: auto;
+}
+
+.about-me>* {
+  padding: 25px;
+}
+
+.about-me .flex-vertical {
+  height: 70%;
+}
+
+.about-me .content {
+  font-family: 'Metropolis';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 2em;
+
+  max-width: 350px;
+}
+
+.about-me .header {
+  color: black;
+  font-size: 3em;
+}
+
+.button {
+  background-color: black;
+  color: white;
+
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+
+  width: fit-content;
+  height: fit-content;
+  padding: 8px;
+
+  font-family: 'Metropolis';
+  font-weight: 300;
+  font-style: normal;
+
+  transition: all .2s ease-in;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  color: black;
 }
