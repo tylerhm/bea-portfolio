@@ -25,8 +25,14 @@
   }
 
   .nav-item {
-    padding-left: 2em;
-    padding-right: 2em
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-item {
+    padding-top: 1em;
   }
 }
 
@@ -35,12 +41,13 @@
   flex-direction: row;
 }
 
-.nav-link {
+a {
   color:black !important
 }
 
-.nav-link:hover, .active {
-  color: var(--link-highlight) !important
+a:hover, .active {
+  color: var(--link-highlight) !important;
+  text-decoration: none !important;
 }
 
 .navbar-toggler {

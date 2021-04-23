@@ -3,20 +3,27 @@ import {
   Navbar
 }
 from 'react-bootstrap';
-
-import Link from 'react-router-dom/Link'
-
+import NavLink from 'react-router-dom/NavLink'
 import {
   FaFacebookF,
   FaInstagram
 } from 'react-icons/fa'
-
+import PagesIndex from '../pages/PagesIndex'
 import './Navigation.css'
 
-//https://www.facebook.com/profile.php?id=100016575947941
-//https://www.instagram.com/beariverairions
+const Navigation = () => {
 
-const Navigation = ({ selectedPage }) => {
+  const pages = []
+  for (const [key, value] of Object.entries(PagesIndex)) {
+    pages.push(
+      <Nav.Item>
+        <NavLink activeClassName='active' to={value}>
+          {key}
+        </NavLink>
+      </Nav.Item>
+    )
+  }
+
   return (
     <Navbar className='py-4' fixed='top' expand='md'>
       <div className='social-group'>
@@ -29,19 +36,8 @@ const Navigation = ({ selectedPage }) => {
       </div>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Nav activeKey={selectedPage}>
-          <Nav.Item>
-            <Link to='/home'>Home</Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to='/home#contact'>Contact</Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to='/resume'>Resume</Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to='/media'>Media</Link>
-          </Nav.Item>
+        <Nav>
+          {pages}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
