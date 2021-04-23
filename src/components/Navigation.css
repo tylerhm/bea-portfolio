@@ -1,14 +1,10 @@
-:root {
-  --link-highlight: #ff99cc;
-}
-
-@font-face {
-  font-family: 'Avenir Light';
-  src: local('Avenir Light'), url('../fonts/AvenirLight/AvenirLight.ttf') format('truetype');
+.nav {
+  align-self: center;
 }
 
 .navbar {
-  font-family: 'Avenir Light';
+  font-family: 'Metropolis';
+  font-weight: 100;
   background-color: white;
 }
 
@@ -40,6 +36,7 @@
 .social-group {
   display: flex;
   flex-direction: row;
+  margin-right: auto;
 }
 
 a {

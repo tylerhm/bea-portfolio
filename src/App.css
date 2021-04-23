@@ -1,7 +1,53 @@
-.App {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+:root {
+  --link-highlight: #ff99cc;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: local('Metropolis Regular'), local('Metropolis-Regular'),
+      url('./fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
+      url('./fonts/Metropolis/Metropolis-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: local('Metropolis Light'), local('Metropolis-Light'),
+      url('./fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
+      url('./fonts/Metropolis/Metropolis-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: local('Metropolis Thin'), local('Metropolis-Thin'),
+      url('./fonts/Metropolis/Metropolis-Thin.woff2') format('woff2'),
+      url('./fonts/Metropolis/Metropolis-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LuloCleanOne';
+  src: local('☞Lulo Clean One Bold'), local('LuloCleanOne-Bold'),
+      url('./fonts/LuloClean/LuloCleanOne-Bold.woff2') format('woff2'),
+      url('./fonts/LuloClean/LuloCleanOne-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LuloCleanOne';
+  src: local('☞Lulo Clean One'), local('LuloCleanOne'),
+      url('./fonts/LuloClean/LuloCleanOne.woff2') format('woff2'),
+      url('./fonts/LuloClean/LuloCleanOne.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

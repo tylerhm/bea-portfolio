@@ -11,18 +11,23 @@
 }
 
 .header {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'LuloCleanOne';
+  font-weight: bold;
+  font-style: normal;
+
   color: white;
-  font-size: 4.5em;
-  font-weight: bolder;
-  letter-spacing: 0.2em;
-  margin-top: -40px;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  margin-top: -30px;
 }
 
 .header.sub {
+  font-family: 'Metropolis';
+  font-weight: 300;
+  font-style: normal;
+
   color: white;
   font-size: 2em;
-  font-weight: 500;
   margin-top: -20px;
 }
 
