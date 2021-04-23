@@ -3,7 +3,7 @@ import {
   Navbar
 }
 from 'react-bootstrap';
-import NavLink from 'react-router-dom/NavLink'
+import { NavLink } from 'react-router-dom'
 import {
   FaFacebookF,
   FaInstagram
@@ -16,7 +16,7 @@ const Navigation = () => {
   const pages = []
   for (const [key, value] of Object.entries(PagesIndex)) {
     pages.push(
-      <Nav.Item>
+      <Nav.Item key={key}>
         <NavLink activeClassName='active' to={value}>
           {key}
         </NavLink>
