@@ -9,6 +9,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 604px) {
+  .header.shrink {
+    font-size: 1.8em !important;
+  }
+}
+
 @font-face {
   font-family: 'Metropolis';
   src: local('Metropolis Regular'), local('Metropolis-Regular'),

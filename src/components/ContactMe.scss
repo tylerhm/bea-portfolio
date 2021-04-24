@@ -29,12 +29,6 @@
     color: var(--black);
     font-size: 3em;
   }
-
-  @media (max-width: 604px) {
-    .header {
-      font-size: 1.8em;
-    }
-  }
   
   .boxed {
     padding: 10px 20px;

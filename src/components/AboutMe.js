@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className='about-me'>
       <img src={aboutMe} alt='Headshot About-Me' />
       <div className='flex-vertical'>
-        <p className='header'>ABOUT ME!</p>
+        <p className='header shrink'>ABOUT ME!</p>
         <p className='content'>
           I am a twenty year old actor/singer/dancer originally from Tampa, Florida.
           I developed my love for musical theatre at the age of 5, listening to the Wicked soundtrack on repeat.
