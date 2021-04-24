@@ -1,3 +1,4 @@
+import sendEmail from '../utils/sendEmail'
 import './ContactMe.scss'
 import {
   Form,
@@ -5,12 +6,17 @@ import {
 } from 'react-bootstrap'
 
 const ContactMe = ({ forwardRef }) => {
+
+  const sendEmail = e => {
+    e.preventDefault()
+  }
+
   return (
     <div ref={forwardRef} className='contact-me marbled'>
       <div className='header boxed'>
         GET IN TOUCH!
       </div>
-      <Form>
+      <Form onSubmit={sendEmail}>
         <Form.Row>
           <Form.Group as={Col} xs='5' md='6'>
             <Form.Label htmlFor='first-name'>First Name *</Form.Label>
