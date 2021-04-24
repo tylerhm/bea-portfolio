@@ -1,5 +1,6 @@
 import {
   BrowserRouter as Router,
+  Redirect,
   Route 
 } from 'react-router-dom'
 import Home from './pages/Home'
@@ -9,10 +10,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <Router>
-      <Route path="/home">
+      <Route path='/home'>
         <Home />
       </Route>
-    </Router>    
+      <Route path='/'>
+        <Redirect to='/home' />
+      </Route>
+    </Router> 
   );
 }
 
