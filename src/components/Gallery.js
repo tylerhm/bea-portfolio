@@ -1,14 +1,17 @@
-import gallery1 from '../images/gallery1.jpg'
-import gallery2 from '../images/gallery2.jpg'
-import gallery3 from '../images/gallery3.jpg'
 import './Gallery.scss'
 
 const Gallery = () => {
   return (
     <div className='gallery'>
-      <img src={gallery1} alt='Gallery Headshot One'></img>
-      <img src={gallery2} alt='Gallery Headshot Two'></img>
-      <img src={gallery3} alt='Gallery Headshot Three'></img>
+      <a href='https://imgur.com/0KHxC7g' target='__blank' className='container'>
+        <img src={'https://i.imgur.com/0KHxC7gl.jpg'} alt='Gallery Headshot One'></img>
+      </a>
+      <a href='https://imgur.com/G4vlvNX' target='__blank' className='container'>
+        <img src={'https://i.imgur.com/G4vlvNXl.jpg'} alt='Gallery Headshot Two'></img>
+      </a>
+      <a href='https://imgur.com/6OJ7Jkc' target='__blank' className='container'>
+        <img src={'https://i.imgur.com/6OJ7Jkcl.jpg'} alt='Gallery Headshot Three'></img>
+      </a>
     </div>
   )
 }

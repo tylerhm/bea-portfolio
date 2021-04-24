@@ -3,8 +3,20 @@
   flex-direction: row;
   justify-content: space-evenly;
 
+  .container {
+    overflow: hidden;
+  }
+
   img {
-    max-width: 33vw;
+    width: 33vw;
+    height: 500px;
     object-fit: cover;
+    object-position: 50% 10%;
+
+    transition: transform 0.2s;
+  }
+
+  img:hover {
+    transform: scale(1.1);
   }
 }
