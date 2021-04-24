@@ -6,7 +6,7 @@ import './Home.scss'
 
 const Home = () => {
   return (
-    <div>
+    <div style={{backgroundColor: '#c6c4c7'}}>
       <Navigation />
       <ParallaxBanner />
       <AboutMe />
