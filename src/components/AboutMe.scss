@@ -9,11 +9,14 @@
   min-height: 700px;
   height: auto;
 
-  * {
-    padding: 25px;
+  img, div {
+    padding: 40px;
   }
   
   .flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 550px;
   }
   

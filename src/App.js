@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <Router>
-      <Route path="/">
+      <Route path="/home">
         <Home />
       </Route>
     </Router>    

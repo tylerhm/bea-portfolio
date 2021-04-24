@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className='about-me'>
       <img src={aboutMe} alt='Headshot About-Me' />
-      <div className='flex-vertical justify-content-between'>
+      <div className='flex-vertical'>
         <p className='header'>ABOUT ME!</p>
         <p className='content'>
           I am a twenty year old actor/singer/dancer originally from Tampa, Florida.
