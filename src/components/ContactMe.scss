@@ -13,7 +13,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  color: black;
+  color: var(--black);
 
   min-height: 700px;
   height: auto;
@@ -27,18 +27,34 @@
   }
   
   .header {
-    color: black;
+    font-family: 'LuloCleanOne';
+    font-weight: bold;
+    font-style: normal;
+    color: var(--black);
     font-size: 3em;
   }
   
   .boxed {
-    padding: 20px 100px;
+    padding: 10px 50px;
     text-align: center;
   
-    border: black;
+    border: var(--black);
     border-width: 10px;
     border-style: solid;
   
     margin-bottom: 75px;
+  }
+
+  label {
+    font-family: 'Metropolis';
+    font-weight: normal;
+    font-style: normal;
+    color: var(--black);
+    font-size: 0.8em;
+  }
+
+  input, textarea {
+    border-color: var(--black);
+    border-radius: 0;
   }
 }

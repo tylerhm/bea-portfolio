@@ -1,8 +1,8 @@
 .button {
-  background-color: black;
+  background-color: var(--black);
   color: white;
 
-  border: black;
+  border: var(--black);
   border-width: 2px;
   border-style: solid;
 
@@ -19,5 +19,5 @@
 
 .button:hover {
   background-color: var(--accent);
-  color: black;
+  color: var(--black);
 }

@@ -39,7 +39,7 @@
   }
   
   a {
-    color:black !important;
+    color: var(--black) !important;
     transition: all 0.1s;
   }
   a:hover, .active {
