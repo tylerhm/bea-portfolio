@@ -3,6 +3,7 @@ import ParallaxBanner from '../components/ParallaxBanner'
 import AboutMe from '../components/AboutMe'
 import ContactMe from '../components/ContactMe'
 import Gallery from '../components/Gallery'
+import Footer from '../components/Footer'
 import './Home.scss'
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <AboutMe />
       <ContactMe />
       <Gallery />
+      <Footer />
     </div>
   )
 }

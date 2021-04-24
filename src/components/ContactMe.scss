@@ -17,6 +17,10 @@
 
   min-height: 700px;
   height: auto;
+
+  .form-row {
+    justify-content: center;
+  }
   
   .header {
     font-family: 'LuloCleanOne';
@@ -25,9 +29,15 @@
     color: var(--black);
     font-size: 3em;
   }
+
+  @media (max-width: 604px) {
+    .header {
+      font-size: 1.8em;
+    }
+  }
   
   .boxed {
-    padding: 10px 50px;
+    padding: 10px 20px;
     text-align: center;
   
     border: var(--black);
