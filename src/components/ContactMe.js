@@ -4,9 +4,9 @@ import {
   Col
 } from 'react-bootstrap'
 
-const ContactMe = () => {
+const ContactMe = ({ forwardRef }) => {
   return (
-    <div className='contact-me marbled'>
+    <div ref={forwardRef} className='contact-me marbled'>
       <div className='header boxed'>
         GET IN TOUCH!
       </div>

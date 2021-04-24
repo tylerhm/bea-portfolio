@@ -4,6 +4,11 @@
   --black: #212529;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Metropolis';
   src: local('Metropolis Regular'), local('Metropolis-Regular'),
