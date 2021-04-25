@@ -5,7 +5,9 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import {
   Form,
   Col,
-  Spinner
+  Spinner,
+  Overlay,
+  Tooltip
 } from 'react-bootstrap'
 import { FaCheck } from 'react-icons/fa'
 import hidden from '../utils/Hidden'
@@ -25,8 +27,10 @@ const EmailForm = () => {
 
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
+  const [warn, setWarn] = useState(false)
 
   const recaptchaRef = useRef()
+  const tooltipRef = useRef()
 
   const submit = data => {
     const fullName = data.firstName + ' ' + data.lastName
@@ -38,7 +42,13 @@ const EmailForm = () => {
   }
 
   const verify = data => {
-    if (sent) return
+    if (sent) {
+      setWarn(true)
+      setTimeout(() => {
+        setWarn(false)
+      }, 5000)
+      return
+    }
     setSending(true)
     recaptchaRef.current.executeAsync()
       .then(token => {
@@ -166,11 +176,19 @@ const EmailForm = () => {
             <button
               className='button'
               type='submit'
+              ref={tooltipRef}
               style={{ margin: 6 }}
             >
               Submit
             </button>
             {status}
+            <Overlay target={tooltipRef.current} show={warn} placement='left' transition={true}>
+              {(props) => (
+                <Tooltip className='status' {...props}>
+                  Oops! Looks like you've already sent an email.
+                </Tooltip>
+              )}
+            </Overlay>
           </Form.Row>
         </Form>
       )}
