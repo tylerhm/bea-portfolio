@@ -36,7 +36,7 @@
   }
   
   .push-down {
-    margin-top: calc(74px + 10vw);
+    margin-top: calc(var(--nav-height) + 5vw);
   }
   
   .flex-vertical {

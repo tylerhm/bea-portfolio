@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import aboutMe from '../images/about-me.webp'
 import './AboutMe.scss'
 
@@ -13,9 +14,9 @@ const AboutMe = () => {
           I am currently pursuing a BFA in Musical Theatre at Boston Conservatory with a minor in Psychology.
           When I'm not studying I enjoy trying new foods, dabbling in photography, and doing yoga.
         </p>
-        <button className='button' onClick={() => {}}>
+        <Link to='/resume' className='button'>
           See Resume
-        </button>
+        </Link>
       </div>
     </div>
   )

@@ -20,4 +20,6 @@
 .button:hover {
   background-color: var(--accent);
   color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
 }

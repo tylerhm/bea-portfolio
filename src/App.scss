@@ -2,11 +2,32 @@
   --accent: #ff99cc;
   --accent-faded: #ff99cc88;
   --black: #212529;
+
+  --nav-height: 72px;
 }
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.header {
+  font-family: 'LuloCleanOne';
+  font-weight: bold;
+  font-style: normal;
+  color: var(--black);
+  font-size: 3em;
+}
+
+.boxed {
+  padding: 10px 20px;
+  text-align: center;
+
+  border: var(--black);
+  border-width: 10px;
+  border-style: solid;
+
+  margin-bottom: 50px;
 }
 
 @media (max-width: 604px) {
