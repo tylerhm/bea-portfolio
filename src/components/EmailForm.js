@@ -52,7 +52,7 @@ const EmailForm = () => {
       .then(token => {
         captchaVerify(token)
           .then(score => {
-              if (score < process.env.REACT_APP_GCAP_THRESHOLD)
+              if (score < parseFloat(process.env.REACT_APP_GCAP_THRESHOLD))
                 return;
               submit(data)
               setSending(false)
