@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # api keys
-src/utils/SecretKeys.js
+src/utils/Hidden.js
 
 # dependencies
 /node_modules

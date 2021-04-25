@@ -1,4 +1,4 @@
-import emailjs from 'emailjs-com'
+import emailjs from './EmailJS'
 
 const sendEmail = async (name, subject, message, replyTo) => {
   const params = {
