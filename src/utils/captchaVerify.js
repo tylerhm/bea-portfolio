@@ -1,4 +1,3 @@
-import hidden from './Hidden'
 import axios from 'axios'
 
 const captchaVerify = token => {
@@ -8,7 +7,7 @@ const captchaVerify = token => {
   }
 
   return axios.post(
-    hidden.verify,
+    process.env.REACT_APP_GCAP_VERIFY_URL,
     body,
   )
     .then(res => {

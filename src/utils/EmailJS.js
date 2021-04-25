@@ -1,5 +1,4 @@
 import emailjs, { init } from 'emailjs-com'
-import hidden from './Hidden'
-init(hidden.emailjs)
+init(process.env.REACT_APP_EMAILJS_KEY)
 
 export default emailjs

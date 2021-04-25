@@ -10,7 +10,6 @@ import {
   Tooltip
 } from 'react-bootstrap'
 import { FaCheck } from 'react-icons/fa'
-import hidden from '../utils/Hidden'
 import captchaVerify from '../utils/captchaVerify'
 import sendEmail from '../utils/sendEmail'
 import './EmailForm.scss'
@@ -53,7 +52,7 @@ const EmailForm = () => {
       .then(token => {
         captchaVerify(token)
           .then(score => {
-              if (score < hidden.threshold)
+              if (score < process.env.REACT_APP_GCAP_THRESHOLD)
                 return;
               submit(data)
               setSending(false)
@@ -96,7 +95,7 @@ const EmailForm = () => {
           <ReCAPTCHA
             ref={recaptchaRef}
             size='invisible'
-            sitekey={hidden.gCapSite}
+            sitekey={process.env.REACT_APP_GCAP_SITE_KEY}
           />
           <Form.Row>
             <Form.Group as={Col} xs='5' md='6' controlId='validationFormik01'>
