@@ -37,7 +37,6 @@ const EmailForm = () => {
     const subject = data.subject
     const message = data.content
     const replyTo = data.email
-    return
     sendEmail(fullName, subject, message, replyTo)
   }
 
