@@ -1,0 +1,13 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .video {
+    width: calc(3vw * 16);
+    margin-left: calc(3vw * 16 / 2);
+    height: calc(3vw * 9);
+  }
+}
