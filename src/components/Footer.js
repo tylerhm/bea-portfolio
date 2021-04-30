@@ -2,6 +2,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa'
+import { MdMail } from 'react-icons/md'
 import './Footer.scss'
 
 const Footer = () => {
@@ -14,6 +15,9 @@ const Footer = () => {
         </a>
         <a href='https://www.linkedin.com/in/TylerHostlerMathis' target='__blank'>
           <FaLinkedin />
+        </a>
+        <a href='mailto:tylerhm.dev@gmail.com' target='__blank'>
+          <MdMail />
         </a>
       </div>
     </div>
