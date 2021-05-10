@@ -1,9 +1,14 @@
+import { useEffect } from 'react'
 import BarGroup from '../components/Resume/BarGroup'
 import resumeJSON from '../utils/resumeJSON'
 import resume from '../downloads/BeaRiveraIrionsResume.pdf'
 import './Resume.scss'
 
 const Resume = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const renderableResume = []
   for (const [key, value] of Object.entries(resumeJSON)) {

@@ -1,6 +1,12 @@
+import { useEffect } from 'react'
 import './Media.scss'
 
 const Media = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className='media'>
       <div>
