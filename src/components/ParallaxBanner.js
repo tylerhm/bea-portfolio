@@ -7,7 +7,7 @@ import './ParallaxBanner.scss'
 
 const ParallaxBanner = () => {
   return (
-    <Parallax className='parallax-banner' strength={700}> 
+    <Parallax className='parallax-banner' strength={250}> 
       <Background>
         <img className='bg' src={background} alt='Headshot Parallax' />
       </Background>
