@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className='flex-vertical'>
         <p className='header shrink'>ABOUT ME!</p>
         <p className='content'>
-          I am a twenty-one year old actor/singer/dancer originally from Tampa, Florida.
+          I am a twenty-two year old actor/singer/dancer originally from Tampa, Florida.
           I developed my love for musical theatre at the age of 5, listening to the Wicked soundtrack on repeat.
           I am currently pursuing a BFA in Musical Theatre at Boston Conservatory with a minor in Psychology.
           As an artist, I aspire to create work that is diverse and inclusive for all parties involved.
