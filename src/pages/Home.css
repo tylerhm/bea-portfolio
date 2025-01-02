@@ -1,0 +1,20 @@
+h1,
+p {
+  transition: font-size 0.2s;
+}
+
+h1 {
+  font-size: 3em;
+}
+p {
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5em;
+  }
+  p {
+    font-size: 3em;
+  }
+}

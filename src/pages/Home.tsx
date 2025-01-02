@@ -1,5 +1,6 @@
 import { Parallax, Background } from "react-parallax";
 import banner from "../images/banner.jpg";
+import "./Home.css";
 
 const ParallaxBanner = () => {
   return (
@@ -8,9 +9,10 @@ const ParallaxBanner = () => {
         <img
           style={{
             width: "100vw",
-            height: "800px",
+            height: "100vh",
+            maxHeight: "100vh",
             objectFit: "cover",
-            objectPosition: "0% 18%",
+            objectPosition: "60% 18%",
           }}
           src={banner}
           alt="Headshot"
@@ -23,17 +25,22 @@ const ParallaxBanner = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          height: "800px",
-          color: "white",
-          fontSize: "5em",
+          height: "100vh",
+          maxHeight: "100vh",
           fontWeight: "bold",
+          textShadow: "black 0px 0px 10px",
         }}
       >
-        <p>
+        <h1
+          style={{
+            color: "white",
+          }}
+        >
           BIANCA
           <br />
           RIVERA-IRIONS
-        </p>
+        </h1>
+        <p style={{ color: "AntiqueWhite" }}>(under construction)</p>
       </div>
     </Parallax>
   );
