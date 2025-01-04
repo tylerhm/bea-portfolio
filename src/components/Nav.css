@@ -1,0 +1,11 @@
+a {
+  color: white;
+  transition: color 0.5s;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+a.active,
+a:hover {
+  color: AntiqueWhite;
+}
