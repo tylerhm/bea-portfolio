@@ -1,5 +1,6 @@
 import { Parallax, Background } from "react-parallax";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 import banner from "../images/banner.jpg";
 import "./Home.css";
@@ -47,6 +48,7 @@ const Home = () => {
           <p style={{ color: "AntiqueWhite" }}>(under construction)</p>
         </div>
       </Parallax>
+      <Footer />
     </>
   );
 };

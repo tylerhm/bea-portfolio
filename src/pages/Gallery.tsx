@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const images = [
   "https://i.imgur.com/boF4s0Nh.jpg",
@@ -14,26 +15,29 @@ const images = [
 
 const Gallery = () => {
   return (
-    <div
-      style={{
-        width: "100vw",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-      }}
-    >
+    <>
       <Nav />
-      {images.map((image) => {
-        return (
-          <img
-            style={{
-              width: "33.33333vw",
-            }}
-            src={image}
-          />
-        );
-      })}
-    </div>
+      <div
+        style={{
+          width: "100vw",
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+        }}
+      >
+        {images.map((image) => {
+          return (
+            <img
+              style={{
+                width: "33.33333vw",
+              }}
+              src={image}
+            />
+          );
+        })}
+      </div>
+      <Footer />
+    </>
   );
 };
 
