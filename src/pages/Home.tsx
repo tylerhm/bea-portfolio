@@ -1,5 +1,6 @@
 import { Parallax, Background } from "react-parallax";
 import Nav from "../components/Nav";
+import Media from "../components/Media";
 import Footer from "../components/Footer";
 
 import banner from "../images/banner.jpg";
@@ -9,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Nav />
-      <Parallax strength={250}>
+      <Parallax strength={150}>
         <Background>
           <img
             style={{
@@ -48,6 +49,9 @@ const Home = () => {
           <p style={{ color: "AntiqueWhite" }}>(under construction)</p>
         </div>
       </Parallax>
+      <Media
+        style={{ width: "100%", padding: "1em", boxSizing: "border-box" }}
+      />
       <Footer />
     </>
   );
