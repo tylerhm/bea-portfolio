@@ -26,20 +26,49 @@ const training = [
   { group: "Jazz", detail: "Michelle Chassé, Larry Sousa" },
 ];
 
+const DownloadIcon = () => (
+  <svg
+    className="about-photo-download-icon"
+    viewBox="0 0 24 24"
+    width="26"
+    height="26"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 3v12" />
+    <path d="M7 10l5 5 5-5" />
+    <path d="M4 21h16" />
+  </svg>
+);
+
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-photos">
-        <img
-          className="about-photo about-photo-candid"
-          src={candid}
-          alt="Bianca Rivera-Irions"
-        />
-        <img
-          className="about-photo about-photo-studio"
-          src={studio}
-          alt="Bianca Rivera-Irions"
-        />
+        <a
+          className="about-photo-link"
+          href={candid}
+          download="bianca-rivera-irions-1.jpg"
+          aria-label="Download this photo"
+          title="Download photo"
+        >
+          <img className="about-photo" src={candid} alt="Bianca Rivera-Irions" />
+          <DownloadIcon />
+        </a>
+        <a
+          className="about-photo-link about-photo-link-studio"
+          href={studio}
+          download="bianca-rivera-irions-2.jpg"
+          aria-label="Download this photo"
+          title="Download photo"
+        >
+          <img className="about-photo" src={studio} alt="Bianca Rivera-Irions" />
+          <DownloadIcon />
+        </a>
       </div>
       <div className="about-content">
         <h2 className="section-heading">About</h2>

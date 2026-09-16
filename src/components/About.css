@@ -11,22 +11,75 @@
   flex-shrink: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: start;
   gap: 0.85em;
   width: 100%;
   max-width: 420px;
   margin: 0 auto;
 }
 
+.about-photo-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.about-photo-link-studio {
+  margin-top: 1.75em;
+}
+
 .about-photo {
+  display: block;
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: top;
-  border-radius: 4px;
+  transition: transform 0.35s ease;
 }
 
-.about-photo-studio {
-  margin-top: 1.75em;
+.about-photo-link:hover .about-photo,
+.about-photo-link:focus-visible .about-photo {
+  transform: scale(1.06);
+}
+
+.about-photo-download-icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 3em;
+  height: 3em;
+  padding: 0.6em;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(36, 20, 20, 0.55);
+  backdrop-filter: blur(2px);
+  color: #fff;
+  opacity: 0;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  transform: scale(0.8);
+}
+
+.about-photo-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(36, 20, 20, 0);
+  transition: background-color 0.25s ease;
+}
+
+.about-photo-link:hover::after,
+.about-photo-link:focus-visible::after {
+  background: rgba(36, 20, 20, 0.35);
+}
+
+.about-photo-link:hover .about-photo-download-icon,
+.about-photo-link:focus-visible .about-photo-download-icon {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .section-heading {
