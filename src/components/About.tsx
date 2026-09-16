@@ -45,15 +45,13 @@ const About = () => {
         <h2 className="section-heading">About</h2>
         <p className="about-bio">
           Bianca Rivera-Irions is a New York City–based actor, singer, and
-          dancer, and a proud member of Actors' Equity Association. She has
-          toured with the First National Tours of{" "}
-          <em>Mrs. Doubtfire</em> (Janet Lundy, u/s Flamenco Singer) and{" "}
-          <em>Pretty Woman</em> (Ensemble). Regional credits include{" "}
-          <em>West Side Story</em> (Anita) at Reagle Music Theatre,{" "}
-          <em>Anastasia</em> (Dance Captain, u/s Lily) at Geva Theatre, and{" "}
-          <em>Joe Turner's Come and Gone</em> (Zonia Loomis) at American
-          Stage, among others. She holds a BFA in Musical Theatre from the
-          Boston Conservatory at Berklee.
+          dancer. A proud mixed Puerto Rican woman, she aspires to tell the
+          stories of her ancestors and give back to the community that has
+          given her so much. She is a strong believer in activism through
+          art and is passionate about making theatre more accessible while
+          highlighting underrepresented voices. After years of traveling the
+          country on tour, she is so excited to be back in New York City to
+          pursue her dreams.
         </p>
 
         <dl className="about-stats">
