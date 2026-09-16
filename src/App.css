@@ -1,5 +1,49 @@
+:root {
+  --color-bg: #faf6f1;
+  --color-bg-alt: #f1e3d8;
+  --color-ink: #241a17;
+  --color-ink-soft: #6f5f57;
+  --color-wine: #5a1e2e;
+  --color-wine-dark: #3c1220;
+  --color-gold: #b08c5a;
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-body: "Jost", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+section {
+  scroll-margin-top: 1.5em;
 }

@@ -1,0 +1,51 @@
+.credits {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5em 1.5em;
+}
+
+.credits-heading {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.credits-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.credits-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.2em;
+  padding: 0.9em 0;
+  border-bottom: 1px solid var(--color-bg-alt);
+}
+
+.credits-production {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-wine-dark);
+}
+
+.credits-role {
+  color: var(--color-ink);
+  font-size: 0.95rem;
+}
+
+.credits-company {
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+  .credits-row {
+    grid-template-columns: 2fr 2fr 1.4fr;
+    align-items: baseline;
+    gap: 1em;
+  }
+
+  .credits-company {
+    text-align: right;
+  }
+}

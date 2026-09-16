@@ -2,63 +2,40 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="container">
-      <div className="center-group">
-        <h3 style={{ marginBlock: "0.2em" }}>Bianca Rivera-Irions</h3>
-        <div className="icon-group">
+    <footer className="footer">
+      <div className="footer-main">
+        <h3 className="footer-name">Bianca Rivera-Irions</h3>
+        <p className="footer-rep">
+          Represented by{" "}
+          <a href="https://nyc.blocagency.com" target="_blank" rel="noreferrer">
+            Bloc NYC, Inc.
+          </a>{" "}
+          · 212.924.6200
+        </p>
+        <div className="footer-links">
           <a
             href="https://www.instagram.com/briverairions/"
-            style={{
-              textDecoration: "none",
-            }}
+            target="_blank"
+            rel="noreferrer"
             aria-label="Instagram"
-            target="__blank"
           >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
-              alt="Instagram"
-              style={{ width: "24px", height: "24px" }}
-            />
+            Instagram
           </a>
           <a
-            href="#"
-            style={{
-              textDecoration: "none",
-            }}
-            aria-label="YouTube"
+            href="/bianca-rivera-irions-resume.pdf"
+            target="_blank"
+            rel="noreferrer"
           >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
-              alt="YouTube"
-              style={{ width: "24px", height: "24px" }}
-            />
+            Resume
           </a>
         </div>
       </div>
-      <div className="right-item icon-group">
-        <span
-          style={{
-            fontSize: "0.9rem",
-            color: "#555",
-          }}
-        >
-          by Tyler Hostler-Mathis
-        </span>
-        <a
-          href="https://github.com/tylerhm"
-          style={{
-            textDecoration: "none",
-          }}
-          aria-label="GitHub"
-          target="__blank"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-            alt="GitHub"
-            style={{ width: "24px", height: "24px" }}
-          />
+      <span className="footer-credit">
+        Site by{" "}
+        <a href="https://github.com/tylerhm" target="_blank" rel="noreferrer">
+          Tyler Hostler-Mathis
         </a>
-      </div>
+      </span>
     </footer>
   );
 };
